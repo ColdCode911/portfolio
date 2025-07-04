@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    border: 0;
+    color: beige;
+    font-weight: 400;
+    font-family:'Times New Roman', Times, serif;
+    overflow-x: hidden;
+}
+
+.nav {
+    background-color: black;
+    width: 100vw;
+    height: 70px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+} 
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar a {
+    margin-right: 60px;
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+#navbar a:hover {
+    background-color: navy;
+    color: skyblue;
+}
+
+#welcome-section {
+    background: linear-gradient(60deg, maroon, crimson, maroon, crimson);
+    font-weight: 400;
+    font-size: 30px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 30vh;
+    align-items: center;
+    text-align: center;
+}
+
+#projects {
+    background-color: rgb(40, 38, 38);
+    color: white;
+    height: 130vh;
+    padding-top: 100px;
+    position: relative;
+    text-align: center;
+}
+
+#projects .line {
+    border-bottom: 1px solid white;
+    width: 630px;
+    font-size: 2em;
+    position: absolute;
+    top: 20px;
+    left: 30%;
+}
+
+.project-tile {
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    grid-template-rows: repeat(2, 300px);
+    grid-gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.project-img {
+    width: 450px;
+    height: 300px;
+}
+
+.project-title {
+    background-color: maroon;
+    color: beige;
+}
+
+@media (max-width: 950px) {
+    #projects {
+        height: 180vh;
+        text-align: center;
+        position: relative;
+    }
+
+    #projects .line {
+        text-align: left;
+        position: relative;
+        left: 10px;
+        top: -70px;
+        font-size: 0.9em;
+        width: 280px;
+    }
+
+    #projects .project-tile {
+        width: 400px;
+        height: 250px;
+        display: grid;
+        grid-template-rows: 250px;
+        grid-template-columns: 400px;;
+        position: absolute;
+        left: 10%;
+        top: 60px;
+    }
+
+    .project-img {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+.wrap-up {
+    background-color: grey;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wrap-up h1 {
+     font-size: 2.5em;
+     color: black;
+}
+
+.wrap-up p {
+    color: maroon;
+}
+
+.wrap-up .socials a {
+    color: maroon;
+}
+
+.wrap-up .socials a:hover {
+    color: navy;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.hr {
+    border: 2px solid black;
+    background-color: black;
+}
+
+footer {
+    background-color: maroon;
+    color: beige;
+    text-align: center;
+}
